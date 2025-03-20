@@ -1,97 +1,68 @@
-// Code Challenge: Simple Function
+// Code Challenge: Identify and Manipulate Arrays
 
-// Challenge:
-// Create a function called `multiplyNumbers` that takes two numbers as parameters and returns their product.
+// Challenge 1:
+// Create a function that takes an array of numbers and returns the sum of all the numbers in the array.
+// Example: calculateSum([1, 2, 3, 4, 5]) should return 15.
 
-// Explanation:
-// The `multiplyNumbers` function is a simplistic function that takes two numbers as parameters and returns their product.
-
-// Example:
-// multiplyNumbers(4, 5) should return 20.
-
-function multiplyNumbers(num1, num2) {
+function calculateSum(numbers) {
   // Write your code here
 }
 
-// Code Challenge: Simple Function
+// Challenge 2:
+// Create a function that takes an array of strings and returns the concatenation of all the strings in the array, separated by a space.
+// Example: concatenateStrings(["Hello", "World", "JavaScript"]) should return "Hello World JavaScript".
 
-// Challenge:
-// Create a function called `calculateAverage` that takes an array of numbers as a parameter and returns the average of those numbers.
-
-// Explanation:
-// The `calculateAverage` function is a simplistic function that takes an array of numbers as a parameter and returns the average value.
-// It does so by summing up all the numbers in the array and dividing the sum by the total number of elements in the array.
-
-// Example:
-// calculateAverage([2, 4, 6, 8]) should return 5.
-
-function calculateAverage(numbers) {
+function concatenateStrings(strings) {
   // Write your code here
 }
 
-// Code Challenge: Simple Function
+// Challenge 3:
+// Create a function that takes an array of numbers and returns a new array with only the even numbers from the original array.
+// Example: filterEvenNumbers([1, 2, 3, 4, 5, 6]) should return [2, 4, 6].
 
-// Challenge:
-// Create a function called `isPalindrome` that takes a string as a parameter and returns true if the string is a palindrome, and false otherwise.
-
-// Explanation:
-// The `isPalindrome` function is a simplistic function that takes a string as a parameter and checks whether it is a palindrome.
-// A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward.
-
-// Example:
-// isPalindrome("racecar") should return true.
-// isPalindrome("hello") should return false.
-
-function isPalindrome(str) {
+function filterEvenNumbers(numbers) {
   // Write your code here
 }
 
-// Code Challenge: Simple Function
+// Challenge 4:
+// Create a function that takes an array of strings and returns a new array with the lengths of the strings from the original array.
+// Example: getStringLengths(["Hello", "World", "JavaScript"]) should return [5, 5, 10].
 
-// Challenge:
-// Create a function called `isEven` that takes a number as a parameter and returns true if the number is even, and false otherwise.
-
-// Explanation:
-// The `isEven` function is a simplistic function that takes a number as a parameter and checks whether it is even.
-// An even number is divisible by 2 without a remainder.
-
-// Example:
-// isEven(4) should return true.
-// isEven(7) should return false.
-
-function isEven(number) {
+function getStringLengths(strings) {
   // Write your code here
 }
 
-// Code Challenge: Simple Function
+// Code Challenge: Identify and Manipulate Arrays
 
-// Challenge:
-// Create a function called `reverseString` that takes a string as a parameter and returns the reversed version of that string.
+// Challenge 5:
+// Create a function that takes an array of numbers and returns the largest number in the array.
+// Example: findLargestNumber([10, 5, 7, 3, 9]) should return 10.
 
-// Explanation:
-// The `reverseString` function is a simplistic function that takes a string as a parameter and returns the reversed version of that string.
-// It reverses the order of characters in the string.
-
-// Example:
-// reverseString("hello") should return "olleh".
-// reverseString("JavaScript") should return "tpircSavaJ".
-
-function reverseString(str) {
+function findLargestNumber(numbers) {
   // Write your code here
 }
 
-// Code Challenge: Simple Function
+// Challenge 6:
+// Create a function that takes an array of strings and returns a new array with the strings in uppercase.
+// Example: convertToUppercase(["hello", "world", "javascript"]) should return ["HELLO", "WORLD", "JAVASCRIPT"].
 
-// Challenge:
-// Create a function called `findMaxNumber` that takes an array of numbers as a parameter and returns the largest number in the array.
+function convertToUppercase(strings) {
+  // Write your code here
+}
 
-// Explanation:
-// The `findMaxNumber` function is a simplistic function that takes an array of numbers as a parameter and returns the largest number in the array.
+// Challenge 7:
+// Create a function that takes an array of numbers and returns a new array with the numbers sorted in ascending order.
+// Example: sortNumbers([5, 2, 9, 1, 3]) should return [1, 2, 3, 5, 9].
 
-// Example:
-// findMaxNumber([10, 5, 7, 3, 9]) should return 10.
+function sortNumbers(numbers) {
+  // Write your code here
+}
 
-function findMaxNumber(numbers) {
+// Challenge 8:
+// Create a function that takes an array of strings and returns the total number of characters in all the strings combined.
+// Example: countTotalCharacters(["Hello", "World", "JavaScript"]) should return 21.
+
+function countTotalCharacters(strings) {
   // Write your code here
 }
 
@@ -101,92 +72,64 @@ function findMaxNumber(numbers) {
 // *************************************************** //
 // *************************************************** //
 
-// Tests:
-function testFindMaxNumber() {
-  const result1 = findMaxNumber([10, 5, 7, 3, 9]);
-  console.log(result1 === 10 ? "Test 1 Passed" : "Test 1 Failed");
+// Code Challenge: Identify and Manipulate Arrays
 
-  const result2 = findMaxNumber([2, 8, 6, 1, 9]);
-  console.log(result2 === 9 ? "Test 2 Passed" : "Test 2 Failed");
+// Challenge 1:
+function testCalculateSum() {
+  const result = calculateSum([1, 2, 3, 4, 5]);
+  console.log(result === 15 ? 'Test Passed' : 'Test Failed');
+}
 
-  const result3 = findMaxNumber([-5, -2, -9, -1]);
-  console.log(result3 === -1 ? "Test 3 Passed" : "Test 3 Failed");
+// Challenge 2:
+function testConcatenateStrings() {
+  const result = concatenateStrings(["Hello", "World", "JavaScript"]);
+  console.log(result === "Hello World JavaScript" ? 'Test Passed' : 'Test Failed');
+}
+
+// Challenge 3:
+function testFilterEvenNumbers() {
+  const result = filterEvenNumbers([1, 2, 3, 4, 5, 6]);
+  console.log(JSON.stringify(result) === JSON.stringify([2, 4, 6]) ? 'Test Passed' : 'Test Failed');
+}
+
+// Challenge 4:
+function testGetStringLengths() {
+  const result = getStringLengths(["Hello", "World", "JavaScript"]);
+  console.log(JSON.stringify(result) === JSON.stringify([5, 5, 10]) ? 'Test Passed' : 'Test Failed');
+}
+
+// Code Challenge: Identify and Manipulate Arrays
+
+// Challenge 5:
+function testFindLargestNumber() {
+  const result = findLargestNumber([10, 5, 7, 3, 9]);
+  console.log(result === 10 ? 'Test Passed' : 'Test Failed');
+}
+
+// Challenge 6:
+function testConvertToUppercase() {
+  const result = convertToUppercase(["hello", "world", "javascript"]);
+  console.log(JSON.stringify(result) === JSON.stringify(["HELLO", "WORLD", "JAVASCRIPT"]) ? 'Test Passed' : 'Test Failed');
+}
+
+// Challenge 7:
+function testSortNumbers() {
+  const result = sortNumbers([5, 2, 9, 1, 3]);
+  console.log(JSON.stringify(result) === JSON.stringify([1, 2, 3, 5, 9]) ? 'Test Passed' : 'Test Failed');
+}
+
+// Challenge 8:
+function testCountTotalCharacters() {
+  const result = countTotalCharacters(["Hello", "World", "JavaScript"]);
+  console.log(result === 21 ? 'Test Passed' : 'Test Failed');
 }
 
 // Run the tests
-testFindMaxNumber();
-
-// Tests:
-function testReverseString() {
-  const result1 = reverseString("hello");
-  console.log(result1 === "olleh" ? "Test 1 Passed" : "Test 1 Failed");
-
-  const result2 = reverseString("JavaScript");
-  console.log(result2 === "tpircSavaJ" ? "Test 2 Passed" : "Test 2 Failed");
-
-  const result3 = reverseString("racecar");
-  console.log(result3 === "racecar" ? "Test 3 Passed" : "Test 3 Failed");
-}
-
-// Run the tests
-testReverseString();
-
-// Tests:
-function testIsEven() {
-  const result1 = isEven(4);
-  console.log(result1 === true ? "Test 1 Passed" : "Test 1 Failed");
-
-  const result2 = isEven(7);
-  console.log(result2 === false ? "Test 2 Passed" : "Test 2 Failed");
-
-  const result3 = isEven(0);
-  console.log(result3 === true ? "Test 3 Passed" : "Test 3 Failed");
-}
-
-// Run the tests
-testIsEven();
-
-// Tests:
-function testIsPalindrome() {
-  const result1 = isPalindrome("racecar");
-  console.log(result1 === true ? "Test 1 Passed" : "Test 1 Failed");
-
-  const result2 = isPalindrome("hello");
-  console.log(result2 === false ? "Test 2 Passed" : "Test 2 Failed");
-
-  const result3 = isPalindrome("level");
-  console.log(result3 === true ? "Test 3 Passed" : "Test 3 Failed");
-}
-
-// Run the tests
-testIsPalindrome();
-
-// Tests:
-function testCalculateAverage() {
-  const result1 = calculateAverage([2, 4, 6, 8]);
-  console.log(result1 === 5 ? "Test 1 Passed" : "Test 1 Failed");
-
-  const result2 = calculateAverage([10, 20, 30]);
-  console.log(result2 === 20 ? "Test 2 Passed" : "Test 2 Failed");
-
-  const result3 = calculateAverage([5]);
-  console.log(result3 === 5 ? "Test 3 Passed" : "Test 3 Failed");
-}
-
-// Run the tests
-testCalculateAverage();
-
-// Tests:
-function testMultiplyNumbers() {
-  const result1 = multiplyNumbers(4, 5);
-  console.log(result1 === 20 ? "Test 1 Passed" : "Test 1 Failed");
-
-  const result2 = multiplyNumbers(-2, 10);
-  console.log(result2 === -20 ? "Test 2 Passed" : "Test 2 Failed");
-
-  const result3 = multiplyNumbers(0, 100);
-  console.log(result3 === 0 ? "Test 3 Passed" : "Test 3 Failed");
-}
-
-// Run the tests
-testMultiplyNumbers();
+testCalculateSum();
+testConcatenateStrings();
+testFilterEvenNumbers();
+testGetStringLengths();
+testFindLargestNumber();
+testConvertToUppercase();
+testSortNumbers();
+testCountTotalCharacters();
